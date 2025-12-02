@@ -18,7 +18,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <RadioButton
+            android:id="@+id/pierwszepytanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <RadioButton
+            android:id="@+id/drugiepytanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/trzeciepytanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/nastepne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nastepne"/>
     </RadioGroup>
 
 </LinearLayout>

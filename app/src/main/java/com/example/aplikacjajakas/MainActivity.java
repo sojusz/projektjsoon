@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         trescpytania = findViewById(R.id.tresc_pytania);
+        int pytanie = 0;
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://my-json-server.typicode.com/sojusz/retrofit/").addConverterFactory(GsonConverterFactory.create()).build();
@@ -41,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this,"" + response.code(), Toast.LENGTH_SHORT).show();
                                 return;
                             }
-                            for (int i = 0; i < 3; i++) {
+
                                 pytania = response.body();
-                                trescpytania.setText((CharSequence) pytania.get(i));
-                            }
+                                trescpytania.setText((CharSequence) pytania.get(pytanie));
+
                         }
 
                         @Override
