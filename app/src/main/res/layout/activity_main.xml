@@ -2,43 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tresc_pytania"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Gra w pytania"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="#4E8491"
+        android:layout_marginBottom="20dp"
+        android:padding="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pytanie x/y:"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+
+        android:textSize="20sp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:padding="8dp"
+        android:textSize="16sp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pytania"/>
+        android:text="dluga tresc pytania typu w trubie pytajacym ktora wykrozystam tutaj zeby zobaczyc czy layaout jest dobry i zebym mogl ustawic styl ladny i czytelny " />
 
     <RadioGroup
+        android:id="@+id/radios"
+        android:padding="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/pierwszepytanie"
+            android:id="@+id/odpa"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/drugiepytanie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/trzeciepytanie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/nastepne"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Nastepne"/>
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/odpb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/odpc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dalej"
+        android:layout_gravity="center"
+        android:backgroundTint="#85969E" />
+
 
 </LinearLayout>
